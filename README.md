@@ -2,12 +2,6 @@
 
 > Turn web browsing into structured thinking.
 
----
-
-## 🎥 Video Demo  
-[Watch the Demo](<INSERT_YOUTUBE_URL_HERE>)
-
----
 
 ## Overview
 
