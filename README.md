@@ -1,4 +1,4 @@
-# 🥖 Breadcrumbs
+# 🍞 Breadcrumbs
 
 > Turn web browsing into structured thinking.
 
