@@ -1,0 +1,119 @@
+:root {
+  --bg-start: #0b1d33;
+  --bg-end: #050b14;
+  --text-main: #e6ebf2;
+  --text-muted: #9aa7bd;
+  --accent: #4da3ff;
+  --border-soft: rgba(255, 255, 255, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 12px;
+  width: 320px;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  background: linear-gradient(160deg, var(--bg-start), var(--bg-end));
+  color: var(--text-main);
+}
+
+h3 {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 12px 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+#clear {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  color: var(--text-main);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#clear:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.tree {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tree > li {
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-soft);
+}
+
+.site {
+  margin-top: 8px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 13px;
+  color: var(--text-main);
+}
+
+.site:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.site > ul {
+  list-style: none;
+  padding-left: 14px;
+  margin-top: 6px;
+  max-height: 500px;
+  overflow: hidden;
+  opacity: 1;
+  transition: max-height 0.25s ease, opacity 0.2s ease;
+}
+
+.site.collapsed > ul {
+  max-height: 0;
+  opacity: 0;
+}
+
+.site::before {
+  content: "▾ ";
+  color: var(--accent);
+}
+
+.site.collapsed::before {
+  content: "▸ ";
+}
+
+.site > ul {
+  list-style: none;
+  padding-left: 14px;
+  margin-top: 6px;
+}
+
+.bullet {
+  margin: 4px 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.clearing {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}

@@ -1,0 +1,4 @@
+ytd-notification-topbar-button-renderer tp-yt-paper-badge,
+ytd-notification-topbar-button-renderer #notification-count {
+  display: none !important;
+}
