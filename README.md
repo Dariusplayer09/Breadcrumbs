@@ -18,6 +18,8 @@ Instead of asking “Where did I go?”, Breadcrumbs helps answer:
 
 ## How It Works
 
+![gif](https://github.com/user-attachments/assets/3377dba4-074c-4dfa-a511-0551df44d9c0)
+
 1. A Google search creates a new thought node.  
 2. Pages visited afterward attach to that thought.  
 3. Pages are grouped by site to prevent duplication.  
